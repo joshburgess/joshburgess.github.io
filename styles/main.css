@@ -331,6 +331,18 @@
    THEME CONTROLS
    ============================================================ */
 
+.nav-controls {
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem;
+  border-right: 1px solid var(--border);
+  margin-right: 0.75rem;
+}
+
+.nav-controls select {
+  display: none;
+}
+
 .theme-controls {
   display: flex;
   align-items: center;
