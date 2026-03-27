@@ -16,14 +16,13 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <div class="site-title"><a href="/">{{ site.title }}</a></div>
+            <div class="nav-controls">
+                <select class="site-select" aria-label="Go to site">
+                    <option value="/">Home</option>
+                    <option value="/blog/">Tech Blog</option>
+                </select>
+            </div>
             <nav class="site-nav">
-                <div class="nav-controls">
-                    <select class="site-select" aria-label="Go to site">
-                        <option value="/">Home</option>
-                        <option value="/blog/">Tech Blog</option>
-                    </select>
-                </div>
                 <div class="theme-controls">
                     <select class="palette-select" aria-label="Color palette">
                         <option value="obsidian">Obsidian</option>
