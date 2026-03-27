@@ -249,13 +249,13 @@
       return params.get('tag');
     }
 
-    var heading = document.querySelector('.taxonomy-term-heading');
+    var heading = document.querySelector('.taxonomy-term-heading') || document.querySelector('.section-heading');
     var clearLink = null;
     if (heading) {
       clearLink = document.createElement('a');
       clearLink.href = window.location.pathname;
       clearLink.className = 'tag-filter-clear';
-      clearLink.textContent = 'Show all projects';
+      clearLink.textContent = 'Show all';
       clearLink.style.display = 'none';
       heading.parentNode.insertBefore(clearLink, heading.nextSibling);
 
@@ -268,15 +268,16 @@
 
     function filterProjects(tag) {
       cards.forEach(function(card) {
+        var target = card.closest('.project-card-link') || card;
         if (!tag) {
-          card.style.display = '';
+          target.style.display = '';
           return;
         }
         var tags = card.querySelectorAll('.tag');
         var match = Array.from(tags).some(function(t) {
           return t.textContent.trim() === tag;
         });
-        card.style.display = match ? '' : 'none';
+        target.style.display = match ? '' : 'none';
       });
 
       document.querySelectorAll('.project-tag-filter').forEach(function(a) {
