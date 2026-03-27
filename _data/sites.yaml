@@ -1,0 +1,6 @@
+- name: Blog
+  description: Thoughts on programming, type systems, and software engineering.
+  url: /blog/
+  tags:
+    - writing
+    - tech

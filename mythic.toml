@@ -1,0 +1,5 @@
+title = "Josh Burgess"
+base_url = "https://joshburgess.github.io"
+
+[highlight]
+theme = "base16-ocean.dark"
