@@ -4,3 +4,11 @@
   tags:
     - writing
     - tech
+
+- name: Music Theory
+  description: Interactive music theory tools for jazz fusion. 37 modules covering harmony, voice leading, melodic patterns, and more.
+  url: /music-theory/
+  tags:
+    - music
+    - interactive
+    - theory
